@@ -6,7 +6,7 @@
 
 import pandas as pd
 pd.set_option('display.max_columns', None)
-df = pd.read_csv("C:\Users\\Merve.Elmas\Desktop\datasets\persona.csv")
+df = pd.read_csv("C:\Users\Desktop\datasets\persona.csv")
 df.head()
 
    PRICE   SOURCE   SEX COUNTRY  AGE
@@ -192,8 +192,6 @@ deu     android male   26     9.0
 #############################################
 # Üçüncü sorunun çıktısında yer alan PRICE dışındaki tüm değişkenler index isimleridir.
 # Bu isimleri değişken isimlerine çeviriniz.
-# İpucu: reset_index()
-# agg_df.reset_index(inplace=True)
 
 agg_df = agg_df.reset_index()
 agg_df.head()
@@ -204,6 +202,7 @@ agg_df.head()
 2     fra  android  female   24   59.0
 3     usa      ios    male   32   54.0
 4     deu  android  female   36   49.0
+
 #############################################
 # GÖREV 5: AGE değişkenini kategorik değişkene çeviriniz ve agg_df'e ekleyiniz.
 #############################################
